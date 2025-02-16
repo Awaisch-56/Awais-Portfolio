@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Kronocast",
     description:
-      "You can check and maintain your weight with this bmi calculator. Here is the link below",
+      "Kronocast is SaaS Enabled Online Marketplace Platform for live events. Empower your creativity and reach from aspiring creators to big enterprises.",
     image: "/images/vedio.png",
     url: "https://dev.kronocast.com",
   },
