@@ -5,8 +5,7 @@ const AboutSection: React.FC = () => {
     <section>
       <div className="about-container">
         <h2 className="about-title">
-          About{" "}
-          <span className="highlight-text">Me</span>
+          About <span className="highlight-text">Me</span>
         </h2>
 
         <div className="about-grid">
@@ -21,21 +20,39 @@ const AboutSection: React.FC = () => {
           <div className="about-text">
             <div className="info-box">
               <p className="text-content">
-              I am Awais Akhtar, a passionate front-end web developer specializing in React.js, Next.js, and JavaScript. With a strong command of Material-UI, I craft intuitive and user-friendly web experiences. My focus is on building modern, responsive designs that deliver a seamless user experience.
+                I am Awais Akhtar, a passionate front-end web developer
+                specializing in React.js, Next.js, and JavaScript. With a strong
+                command of Material-UI, I craft intuitive and user-friendly web
+                experiences. My focus is on building modern, responsive designs
+                that deliver a seamless user experience.
                 <br />{" "}
               </p>
             </div>
 
             <div className="info-box">
               <p className="text-content">
-              I completed my matriculation at BISE Bahawalpur in 2014. Following that, I pursued my intermediate studies in FSc Pre-engineering at BISE Bahawalpur. I later graduated with a degree in Electrical Engineering from the Islamia University of Bahawalpur (IUB) in 2020.
+                I completed my matriculation at BISE Bahawalpur in 2014.
+                Following that, I pursued my intermediate studies in FSc
+                Pre-engineering at BISE Bahawalpur. I later graduated with a
+                degree in Electrical Engineering from the Islamia University of
+                Bahawalpur (IUB) in 2020.
                 <br />
               </p>
             </div>
 
             <div className="info-box">
               <p className="text-content">
-              At The Dev Corporate in Lahore, I developed and deployed robust web applications using React.js, Next.js, Material-UI, and Redux for state management, focusing on creating intuitive and efficient user interfaces. I also designed and built cross-platform mobile applications with React Native, ensuring a consistent user experience across both iOS and Android. Additionally, I implemented responsive designs and optimized performance across various devices and screen sizes to enhance the overall user experience.
+                At The Dev Corporate, I built and optimized web applications
+                using Next.js, React.js, Material-UI, and Redux,
+                focusing on intuitive UIs and responsive design for seamless
+                user experiences. I also developed and maintained React Native
+                applications, ensuring smooth performance and native-like
+                interactions.
+                <br />
+                At Tyzend, I leveraged Zustand for state management, used ShadCN
+                for modern UI components, and implemented Tailwind CSS for
+                efficient styling, ensuring high-performance and visually
+                appealing applications.
               </p>
             </div>
           </div>

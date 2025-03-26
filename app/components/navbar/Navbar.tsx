@@ -1,11 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import NavLink from "../navLink/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import MenuOverlay from "../menuOverlay/MenuOverlay";
 import Image from "next/image";
-
 
 export const navbarLinks = [
   { title: "Home", path: "/" },
@@ -17,11 +16,31 @@ export const navbarLinks = [
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const navRef = useRef<HTMLElement | null>(null);
+
+  const handleClose = () => {
+    setIsNavbarOpen(false);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        handleClose();
+      }
+    };
+
+    if (isNavbarOpen) {
+      document.addEventListener("click", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isNavbarOpen]);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={navRef}>
       <div className="navbar-container">
-        <Link href={"./"} className="navbar-logo">
+        <Link href={"/"} className="navbar-logo">
           <Image
             src="/images/logo.jpg"
             alt="Logo Image"
@@ -30,7 +49,7 @@ const Navbar = () => {
             className="logo"
           />
         </Link>
-        <div className="">
+        <div>
           {!isNavbarOpen ? (
             <button
               onClick={() => setIsNavbarOpen(true)}
@@ -39,10 +58,7 @@ const Navbar = () => {
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
-            <button
-              onClick={() => setIsNavbarOpen(false)}
-              className="navbar-toggle-button"
-            >
+            <button onClick={handleClose} className="navbar-toggle-button">
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
@@ -53,14 +69,16 @@ const Navbar = () => {
         >
           <ul className="navbar-links-list">
             {navbarLinks.map((link, index) => (
-              <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+              <li key={index} onClick={handleClose}>
+                <NavLink href={link.path} title={link.title} onClick={handleClose} />
               </li>
             ))}
           </ul>
         </div>
       </div>
-      {isNavbarOpen ? <MenuOverlay links={navbarLinks} /> : null}
+      {isNavbarOpen ? (
+        <MenuOverlay links={navbarLinks} onClose={handleClose} />
+      ) : null}
     </nav>
   );
 };

@@ -11,18 +11,24 @@ const projects = [
     url: "https://www.thelifescript.com",
   },
   {
-    title: "Best Home Maintenance",
-    description:
-      "Your Trusted Partner for Quality Maintenance Services in Dubai and Abu Dhabi",
-    image: "/images/kmat.svg",
-    url: "https://kmatechnical.com",
-  },
-  {
     title: "Kronocast",
     description:
       "Kronocast is SaaS Enabled Online Marketplace Platform for live events. Empower your creativity and reach from aspiring creators to big enterprises.",
     image: "/images/vedio.png",
     url: "https://dev.kronocast.com",
+  },
+  {
+    title: "JobJelly",
+    description: "Track your progress, improve your resume, and see how you match up to your dream job.",
+    image: "/images/job.png",
+    url: "https://dev.jobjelly.io/landing-page",
+  },
+  {
+    title: "Best Home Maintenance",
+    description:
+      "Your Trusted Partner for Quality Maintenance Services in Dubai and Abu Dhabi",
+    image: "/images/kmat.svg",
+    url: "https://kmatechnical.com",
   },
   {
     title: "The Dev Corporate",

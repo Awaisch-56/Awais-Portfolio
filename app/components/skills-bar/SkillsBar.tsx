@@ -2,15 +2,17 @@ import React from "react";
 import { SkillBarProps } from "@/type/componentsTypes";
 
 const skillLevels: SkillBarProps[] = [
-  { name: "React.js", level: "80" },
-  { name: "Next.js", level: "70" },
-  { name: "React Native", level: "60" },
-  { name: "TypeScript", level: "70" },
+  { name: "Next.js", level: "80" },
+  { name: "React.js", level: "90" },
+  { name: "React Native", level: "70" },
+  { name: "Redux", level: "80" },
+  { name: "Zustand", level: "80" },
+  { name: "Material UI", level: "90" },
+  { name: "ShadCN", level: "80" },
+  { name: "Tailwind CSS", level: "80" },
+  { name: "TypeScript", level: "80" },
   { name: "JavaScript", level: "80" },
-  { name: "Material UI", level: "80" },
   { name: "Bootstrap", level: "70" },
-  { name: "CSS", level: "90" },
-  { name: "HTML", level: "90" },
 ];
 
 export const SkillsBar: React.FC = () => {

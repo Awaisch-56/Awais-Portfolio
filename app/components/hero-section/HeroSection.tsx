@@ -4,6 +4,15 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Awais_CV.pdf";
+    link.download = "Awais_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="hero-section">
       <div className="hero-grid">
@@ -29,15 +38,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="hero-description">
-            I am a Frontend Developer with 1.5 years of experience, specializing
-            in React.js, Next.js, React Native, and JavaScript. I have a passion
-            to build modern web applications and mobile apps. Skilled in
-            Material-UI, Tailwind CSS, and Bootstrap, I create pixel-perfect,
-            user-friendly interfaces. With expertise in Redux for state
-            management, I ensure seamless data flow and performance
-            optimization. Passionate about scalable, high-quality solutions, I
-            thrive in collaborative environments, contributing innovative ideas
-            to impactful projects.
+          I am a passionate Frontend Developer with 2 years of experience in building dynamic, high-performance web and mobile applications. Skilled in React.js, Next.js, React Native, Material-UI (MUI), Tailwind CSS, ShadCN, Redux, Zustand, and TanStack Query, I excel at crafting intuitive, responsive user interfaces while ensuring seamless state management.
+          With expertise in Redux, Zustand, and TanStack Query, I focus on developing scalable, maintainable applications that enhance user experience and performance. Committed to writing clean, efficient code, I thrive on transforming innovative ideas into impactful digital solutions. I am eager to contribute to forward-thinking projects that push the boundaries of modern development.
           </p>
           <div className="hero-buttons">
             <button
@@ -46,11 +48,8 @@ const HeroSection = () => {
             >
               Contact
             </button>
-            <button
-              className="btn-hire-me"
-              onClick={() => (window.location.href = "/contact")}
-            >
-              <span className="hire-me-span">Hire Me</span>
+            <button className="btn-hire-me" onClick={handleDownloadCV}>
+              <span className="hire-me-span">Download CV</span>
             </button>
           </div>
         </div>
