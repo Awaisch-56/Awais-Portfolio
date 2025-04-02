@@ -48,7 +48,7 @@ const HeroSection = () => {
             >
               Contact
             </button>
-            <button className="btn-hire-me" onClick={handleDownloadCV}>
+            <button className="btn-contact" onClick={handleDownloadCV}>
               <span className="hire-me-span">Download CV</span>
             </button>
           </div>
