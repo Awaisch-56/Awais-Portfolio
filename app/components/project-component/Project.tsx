@@ -31,18 +31,25 @@ const projects = [
     url: "https://kmatechnical.com",
   },
   {
+    title: "Spiritual Healer",
+    description:
+      "Welcome to Your Healing Journey. Experience the uplifting power of Spiritual Healing and restore your balance.",
+    image: "/images/logo1.svg",
+    url: "https://thespiritualhealers.com",
+  },
+  {
+    title: "Better Mind",
+    description:
+      "Better Mind helps you track moods and reflect on experiences, supporting your emotional well-being with a trusted AI companion.",
+    image: "/images/logo.svg",
+    url: "https://better-mind-dashboard.vercel.app",
+  },
+  {
     title: "The Dev Corporate",
     description:
       "We Engineer Smart Tech Soutions. Global software partner helping businesses create innovative & fundable products.",
     image: "/images/tdc.png",
     url: "https://thedevcorporate.com",
-  },
-  {
-    title: "Spiritual Healer",
-    description:
-      "Welcome to Your Healing Journey. Experience the uplifting power of Spiritual Healing and restore your balance.",
-    image: "/images/logo.svg",
-    url: "https://thespiritualhealers.com",
   },
   {
     title: "KFC",
