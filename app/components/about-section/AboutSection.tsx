@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
 
         <div className="about-grid">
           <Image
-            src="/images/picture.jpg"
+            src="/images/picture1.png"
             alt="About Section Image"
             width={500}
             height={500}

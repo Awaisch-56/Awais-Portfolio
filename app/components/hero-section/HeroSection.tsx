@@ -56,7 +56,7 @@ const HeroSection = () => {
         <div className="hero-image-container">
           <div className="hero-image-wrapper">
             <Image
-              src="/images/profile1.png"
+              src="/images/profile2.png"
               alt="Hero Section Image"
               width={350}
               height={350}

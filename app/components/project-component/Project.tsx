@@ -58,6 +58,27 @@ const projects = [
     image: "/images/kfc.png",
     url: "https://kfc-web.vercel.app",
   },
+  {
+    title: "proptely",
+    description:
+      "A property management dashboard for managing tenants, leases, commissions, and documents.",
+    image: "/images/proptely1.png",
+    url: "https://proptely.vercel.app",
+  },
+  {
+    title: "IGS",
+    description:
+      "Designed homepage UI for IGS showcasing supply chain and procurement innovation.",
+    image: "/images/igs.png",
+    url: "https://igs-lemon.vercel.app",
+  },
+   {
+    title: "Movie List",
+    description:
+      "A web app to showcase, add, and manage your favorite movies with images and details.",
+    image: "/images/movie1.jpg",
+    url: "https://movie-list-rho-seven.vercel.app",
+  },
 ];
 
 const Project: React.FC = () => {
