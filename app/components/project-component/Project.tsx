@@ -21,7 +21,7 @@ const projects = [
     title: "JobJelly",
     description: "Track your progress, improve your resume, and see how you match up to your dream job.",
     image: "/images/job.png",
-    url: "https://dev.jobjelly.io/landing-page",
+    url: "https://www.jobjelly.io/    ",
   },
   {
     title: "Best Home Maintenance",
@@ -78,6 +78,13 @@ const projects = [
       "A web app to showcase, add, and manage your favorite movies with images and details.",
     image: "/images/movie1.jpg",
     url: "https://movie-list-rho-seven.vercel.app",
+  },
+  {
+    title: "Deliver X",
+    description:
+      "DeliverX is a delivery service website that allows customers to explore services, get quotes, and book reliable shipments easily online.",
+    image: "/images/deliveryboy.png",
+    url: "https://deliver-x-nu.vercel.app",
   },
 ];
 
